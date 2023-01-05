@@ -18,15 +18,12 @@ document.onclick = function (e) {
 toggle.onclick = function () {
   toggle.classList.toggle("active");
   navbar.classList.toggle("active");
-
-
-
 };
-// if ($('#mob-nav').is(':visible')) {
-//   $('.site-wrapper').addClass("fixed-position");
-// } else {
-//   $('body').removeClass("fixed-position");
-// }
+if (document.getElementById('#mob-nav').is(':visible')) {
+  document.getElementById('.site-wrapper').addClass(".lock-scroll");
+} else {
+  document.querySelector('body').removeClass(".lock-scroll");
+}
 // function lockScroll() {
 //   document.body.classList.toggle('lock-scroll');
 // }

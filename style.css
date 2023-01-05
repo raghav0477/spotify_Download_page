@@ -296,7 +296,9 @@ a:hover{
   top: 0;
   padding-top: 1rem;
   background: var(--secondary);
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
   height: 100vh;
   z-index: 10;
   transform: scale(0, 0);
@@ -315,7 +317,7 @@ a:hover{
 }
 #mob-nav.active {
   transform: scale(1, 1);
-  width: 100%;
+  width: 100vw;
 }
 #mob-nav li {
   padding: 15px 35px;

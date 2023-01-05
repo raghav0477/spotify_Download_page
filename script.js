@@ -11,11 +11,15 @@ document.onclick = function (e) {
   ) { 
     toggle.classList.remove("active");
     navbar.classList.remove("active");
+
+    document.body.classList.toggle('lock-scroll');
   }
 };
 toggle.onclick = function () {
   toggle.classList.toggle("active");
   navbar.classList.toggle("active");
+
+
 
 };
 // if ($('#mob-nav').is(':visible')) {
@@ -23,6 +27,6 @@ toggle.onclick = function () {
 // } else {
 //   $('body').removeClass("fixed-position");
 // }
-function lockScroll() {
-  document.body.classList.toggle('lock-scroll');
-}
+// function lockScroll() {
+//   document.body.classList.toggle('lock-scroll');
+// }

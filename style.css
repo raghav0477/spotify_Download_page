@@ -308,7 +308,10 @@ a:hover{
 }
 .lock-scroll {
   overflow: hidden;
+  pointer-events: none;
+  opacity: 0.4;
 }
+
 #mob-nav ul {
   display: flex;
   flex-direction: column;
@@ -316,7 +319,7 @@ a:hover{
   list-style: none;
 }
 #mob-nav.active {
-  transform: scale(1, 1);
+  transform: scale(1.1, 1);
   width: 100vw;
 }
 #mob-nav li {

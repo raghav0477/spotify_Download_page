@@ -21,7 +21,6 @@ html{
 }
 body{
   overflow-x: hidden;
-  position: relative;
 }
 header {
   background-color: var(--secondary);
@@ -34,11 +33,10 @@ nav {
 }
 .logo {
   width: 120px;
-  /* margin-top: 20px; */
 }
 
 ul li {
-  padding: 28px 17px;
+  padding: 25px 17px;
 }
 .left {
   font-size: 14px;
@@ -52,9 +50,9 @@ svg:hover
   fill: var(--primary);
 }
 svg{
-    margin-left: 8px;
-    margin-right: 5px;
-    fill: var(--white);
+  margin-left: 8px;
+  margin-right: 5px;
+  fill: var(--white);
 }
 
 .profile {
@@ -81,6 +79,7 @@ svg{
   margin: 0 auto;
   height: 525px;
   position: relative;
+  z-index: -1;
 }
 .hero-ctn {
   margin: 0;
@@ -223,8 +222,8 @@ a:hover{
   color: var(--lighter);
   cursor: pointer;
 }
-.ups{
-  margin-left: 31rem;
+.copyright{
+  margin-left: 31vw;
   color: var(--lighter);
 }
 
@@ -239,7 +238,6 @@ a:hover{
 .mobile-nav-icon-close{
   width: 2rem;
   height: 2rem;
-  /* z-index: 9999; */
 }
 .mobile-nav-icon[name="close-outline"]{
   display: none;
@@ -247,10 +245,6 @@ a:hover{
 .mob-nav-list{
   display: none;
 }
-/* .nav-bar{
-  opacity: 0;
-  display: none;
-} */
 .mobile-profile{
   display: flex;
   flex-grow: 0.2;
@@ -261,9 +255,17 @@ a:hover{
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
+
 }
 
-
+.seprator{
+  height: 3px;
+  width: 25px;
+  background-color: var(--white);
+  margin: 1.5rem 1rem 2.5rem 1rem;
+  color: #ffffff;
+  display: inline-block;
+}
 
 @media (max-width:1300px) and (min-width:1100px) {
   .container{
@@ -273,8 +275,8 @@ a:hover{
     gap: 0;
     padding: 3rem 0;
   }
-  .ups{
-    margin-left: 29.8rem;
+  .copyright{
+    margin-left: 29vw;
   }
   .mobilenav {
     display: flex;
@@ -306,8 +308,6 @@ a:hover{
     display: block;
   }
   ul{ 
-    display: flex;
-    flex-flow: row wrap;
     justify-content: unset;
     flex: 0 0 50%;
   }
@@ -372,6 +372,7 @@ a:hover{
   .mob-nav-list{
     display: flex;
     margin-top: 50px;
+    padding: 1rem;
     color: var(--white);
   }
   .mob-nav-list a{
@@ -381,11 +382,28 @@ a:hover{
   .mobile-nav-btn{
     display: block;
   }
-
+  .mobile-nav-icon-close{
+    float: right;
+    margin: 20px;
+  }
   .active .mobile-nav-icon[name="menu-outline"]{
     display: none;
   }
   .active .mobile-nav-icon[name="close-outline"]{
     display: block;
+  }
+  .list-item{
+    padding: 10px 10px;
+  }
+  .ft-bg{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .ft-sm{
+    font-size: 24px;
+  }
+  .top{
+    margin-top: 100%;
+    padding: 10px;
   }
 }

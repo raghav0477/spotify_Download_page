@@ -20,3 +20,6 @@
 .column{
     flex-direction: column;
 }
+.wrap{
+    flex-flow: row wrap;
+}

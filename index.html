@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="site-wrapper">
-      <div id="mobile-nav">
+      <nav class="mobile-nav flex justify-between items-center active">
         <a href=""
           ><img
             src="./assests/Spotify_Logo_RGB_White.png"
@@ -27,25 +27,34 @@
             class="mobile-logo"
         /></a>
 
-        <div class="mobile-profile">
-          <a href="#"><img src="./assests/img.png" alt="" class="avatar" /></a>
-          <div id="toggle" onclick="lockScroll();">
+        <!--<div class="mobile-profile">
+          <a href="#"><img src="./assests/img.png" alt="" class="avatar" /></a> -->
+        <!-- <div class="toggle" onclick="lockScroll();">
             <span></span>
-          </div>
+          </div> -->
+        <div class="mobile-nav-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon-menu"></ion-icon>
+          <!-- <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>/ -->
         </div>
 
-        <div id="mob-nav">
-          <ul>
-            <li>
-              <a href="/">Premium</a>
-            </li>
-            <li><a href="/">Support</a></li>
-            <li><a href="/">Download</a></li>
-          </ul>
+        <div class="mobile-nav-menu">
+          <div class="mobile-nav-btn">
+            <ion-icon name="close-outline" class="mobile-nav-icon-close"></ion-icon>
+          </div>
+          <div class="mob-nav-list">
+            <ul>
+              <li>
+                <a href="/" class="styling">Premium</a>
+              </li>
+              <li><a href="/" class="styling">Support</a></li>
+              <li><a href="/" class="styling">Download</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
+
       <header>
-        <nav class="container">
+        <nav class="nav-bar container flex items-center justify-between">
           <div class="right">
             <img
               src="./assests/Spotify_Logo_RGB_White.png"
@@ -53,15 +62,15 @@
               class="logo"
             />
           </div>
-          <div class="left">
-            <ul>
+          <div class="left flex">
+            <ul class="flex justify-center items-center styling">
               <li class="nav-list">Premium</li>
               <li class="nav-list">Support</li>
               <li class="nav-list">Download</li>
             </ul>
-            <div class="profile">
+            <div class="profile flex">
               <img src="./assests/img.png" alt="" class="avatar" />
-              <div class="dropdown">
+              <div class="dropdown flex">
                 Profile
                 <svg
                   width="14px"
@@ -80,7 +89,7 @@
       </header>
 
       <div class="hero">
-        <div class="hero-ctn container">
+        <div class="hero-ctn container flex justify-center items-center column">
           <div class="image-gp">
             <img src="./assests/laptop.svg" alt="" class="laptop" />
             <img src="./assests/green-circle.svg" alt="" class="circle" />
@@ -116,27 +125,38 @@
       <div class="accounts">
         <div class="accounts-ctn container">
           <img src="./assests/all-devices.svg" alt="" />
-        <h1 class="section-head">One account, listen everywhere.</h1>
-        <ul class="device-list">
-          <li class="acc-list">MOBILE</li>
-          <li class="acc-list">COMPUTER</li>
-          <li class="acc-list">TABLET</li>
-          <li class="acc-list"><a href="#" class="spl_Link">CAR</a></li>
-          <li class="acc-list">
-            <a href="#" class="spl_Link">PLAYSTATION<sup>®</sup></a>
-          </li>
-          <li class="acc-list"><a href="#" class="spl_Link">XBOX</a></li>
-          <li class="acc-list"><a href="#" class="spl_Link">TV</a></li>
-          <li class="acc-list"><a href="#" class="spl_Link">SPEAKER</a></li>
-          <li class="acc-list"><a href="#" class="spl_Link">WEB PLAYER</a></li>
-        </ul>
+          <h1 class="section-head">One account, listen everywhere.</h1>
+          <ul class="device-list flex justify-center">
+            <li class="acc-list styling">MOBILE</li>
+            <li class="acc-list styling">COMPUTER</li>
+            <li class="acc-list styling">TABLET</li>
+            <li class="acc-list styling">
+              <a href="#" class="spl_Link">CAR</a>
+            </li>
+            <li class="acc-list styling">
+              <a href="#" class="spl_Link">PLAYSTATION<sup>®</sup></a>
+            </li>
+            <li class="acc-list styling">
+              <a href="#" class="spl_Link">XBOX</a>
+            </li>
+            <li class="acc-list styling">
+              <a href="#" class="spl_Link">TV</a>
+            </li>
+            <li class="acc-list styling">
+              <a href="#" class="spl_Link">SPEAKER</a>
+            </li>
+            <li class="acc-list styling">
+              <a href="#" class="spl_Link">WEB PLAYER</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
+    <!-- </div> -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-content">
+        <div class="footer-content flex justify-between">
           <div class="logo">
             <img
               src="./assests/Spotify_Logo_RGB_White.png"
@@ -144,14 +164,14 @@
               class="logo"
             />
           </div>
-          <div class="footer-links">
-            <ul>
+          <div class="footer-links flex">
+            <ul class="styling">
               <li class="list-head">Company</li>
               <li><a href="#">About</a></li>
               <li><a href="#">Jobs</a></li>
               <li><a href="#">For the Record</a></li>
             </ul>
-            <ul>
+            <ul class="styling">
               <li class="list-head">Communities</li>
               <li><a href="">For Artists</a></li>
               <li><a href="#">Developers</a></li>
@@ -159,14 +179,14 @@
               <li><a href="#">Investors</a></li>
               <li><a href="#">Vendors</a></li>
             </ul>
-            <ul>
+            <ul class="styling">
               <li class="list-head">Useful Links</li>
               <li><a href="#">Support</a></li>
               <li><a href="#">Web Player</a></li>
               <li><a href="#">Free Mobile App</a></li>
             </ul>
           </div>
-          <div class="social-links">
+          <div class="social-links flex row">
             <a href="#">
               <span class="fa-stack fa-4x">
                 <i class="fa fa-circle fa-stack-2x icon-background"></i>
@@ -186,7 +206,7 @@
               </span>
             </a>
           </div>
-          <div class="country">
+          <div class="country flex items-center">
             <svg
               width="12"
               height="13"
@@ -202,8 +222,8 @@
             </svg>
             <a href="#">USA</a>
           </div>
-          <div class="etc_Links">
-            <ul>
+          <div class="etc_Links flex justify-between">
+            <ul class="flex styling">
               <a href="#"><li>Legal</li></a>
               <a href="#"><li>Privacy Center</li></a>
               <a href="#"><li>Privacy Policy</li></a>
@@ -216,7 +236,14 @@
         </div>
       </div>
     </footer>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>
